@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.javabykiran.model.Users;
-import com.javabykiran.service.User_Service;
+import com.javabykiran.service.UserService;
 
 @Controller
 public class DashboardController {
 
 	@Autowired
-	private User_Service userService;
+	private UserService userService;
 	
 	@RequestMapping(value="/userspage")
 	public ModelAndView userspage( Model model)
